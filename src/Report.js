@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const Report = () => {
   return (
@@ -6,7 +6,7 @@ const Report = () => {
       <h1>Kmom01</h1>
       <h2>GitHub</h2>
       <p>
-        Klicka här för att komma till mitt GitHub-repo.
+        Klicka <a href="https://github.com/SannaFielding/JSramverk">här</a> för att komma till mitt GitHub-repo.
       </p>
       <h2>RQ1</h2>
       <p>
@@ -96,35 +96,3 @@ const Report = () => {
 };
 
 export default Report;
-
-// import React, { useEffect, useState } from 'react';
-//
-// const Report = ({ match }) => {
-// const kmom = match.params.kmom;
-// const [questions, setQuestions] = useState([]);
-//
-// useEffect(() => {
-//   fetch(`https://me-api.jsramverk.se/reports/${kmom}`)
-//     .then(res => res.json())
-//     .then(res => setQuestions(res.data));
-// });
-//
-// const QuestionsList = () =>
-//   questions.map((question, index) => (
-//     <div className="question" key={index}>
-//       <p>
-//         <strong>{question.question}</strong>
-//       </p>
-//       <p>{question.answer}</p>
-//     </div>
-//   ));
-//
-// return (
-//   <main>
-//     <h2>{kmom}</h2>
-//     <QuestionsList />
-//   </main>
-// );
-// };
-//
-// export default Report;
