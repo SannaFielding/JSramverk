@@ -1,38 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html {
+    font-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url("./img/water-background.jpeg");
+    background-size: 100% auto;
+    color: white;
+}
+
 .App {
-  text-align: center;
+    width: 70%;
+    margin: 3vh auto;
+    background-color: rgba(0, 128, 128, 0.8);
+    padding-top: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-nav {
+    min-height: 5vh;
+    width: 100%;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 4px #004e4e solid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+    width: 100%;
+    padding: 1vh;
+    min-height: 40vh;
+    color: white;
+    text-shadow: 2px 2px #004e4e;
+    overflow: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    font-family: 'Kufam', cursive;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 6px 6px #004e4e;
+    margin-bottom: 0.5em;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    margin-left: 1em;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin-right: 1em;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+}
+
+li a:hover {
+    text-decoration: underline;
 }
